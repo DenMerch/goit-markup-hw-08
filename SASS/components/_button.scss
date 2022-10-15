@@ -1,10 +1,16 @@
-   .btn {
-       cursor: pointer;
-       font-size: 16px;
-       font-family: 'Roboto', sans-serif;
-    @include font(16px, 500, 1.63, 0.03em);
-       background: #F5F4FA;
-       color: var(--title-text-color);
-       border: 0;
-       border-radius: 4px;
-   }
+ .btn{
+   cursor: pointer;
+   border: 0;
+   background: #fff;
+ }
+//   .btn {
+       
+//        font-size: 16px;
+//        font-family: 'Roboto', sans-serif;
+//     @include font(16px, 500, 1.63, 0.03em);
+//        background: #F5F4FA;
+//        color: var(--title-text-color);
+//    cursor: pointer;
+//       border: 0;
+//        border-radius: 4px;
+//  }
