@@ -6,20 +6,20 @@
     max-width: 480px;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/background/Hero-img-1x-mob.jpg');
+        url('../images/background/Hero-img-1x-mob.jpg');
     background-size: cover;
 
     @include retina {
-        background-image: url('../../images/background/Hero-img-2x-mob.jpg');
+        background-image: url('../images/background/Hero-img-2x-mob.jpg');
     }
 
     @include tablet {
         max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../../images/background/Hero-img-1x-tab.jpg');
+            url('../images/background/Hero-img-1x-tab.jpg');
 
         @include retina {
-            background-image: url('../../images/background/Hero-img-2x-tab.jpg');
+            background-image: url('../images/background/Hero-img-2x-tab.jpg');
         }
     }
 
@@ -27,10 +27,10 @@
         max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../../images/background/Hero-img-1x-desk.jpg');
+            url('../images/background/Hero-img-1x-desk.jpg');
 
         @include retina {
-            background-image: url('../../images/background/Hero-img-2x-desk.jpg');
+            background-image: url('../images/background/Hero-img-2x-desk.jpg');
         }
     }
 
