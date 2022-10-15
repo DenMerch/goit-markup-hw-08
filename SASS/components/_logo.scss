@@ -1,7 +1,17 @@
 .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-right: 93px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+
+
+
+    @include desk {
+        margin-right: 93px;
+        @include font(26px, 700, 1.19, inherit);
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
     @include font(24px, 700, 1.16, inherit);
     font-family: var(--secondary-font-family);
     color: var(--title-text-color);
@@ -10,11 +20,8 @@
     &--blue {
         color: var(--accent-text-color);
     }
-    
+
     &--white {
         color: var(--background-color);
     }
 }
-//  @include font(26px, 700, 1.19, inherit);
-// padding-top: 24px;
-// padding-bottom: 25px;

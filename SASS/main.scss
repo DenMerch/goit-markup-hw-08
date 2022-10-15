@@ -1,13 +1,14 @@
 // utils
+@import './UTILS/variables';
 @import './UTILS/general';
 @import './UTILS/flex';
 @import './UTILS/subject';
-@import './UTILS/variables';
+
 // components
 @import './components/logo';
 @import './components/header';
 @import './components/button';
-// @import './components/hero';
+@import './components/hero';
 // @import './UTILS/hidden';
 // @import './components/advantage';
 // @import './components/works';

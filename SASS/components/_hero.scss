@@ -2,28 +2,65 @@
     background-color: #C4C4C4;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
-    max-width: 1600px;
+    height: 400px;
+    max-width: 480px;
+    background-repeat: no-repeat;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero-img.png');
-    padding-top: 200px;
-    padding-bottom: 200px;
+        url('../../images/background/Hero-img-1x-mob.jpg');
+    background-size: cover;
+
+    @include retina {
+        background-image: url('../../images/background/Hero-img-2x-mob.jpg');
+    }
+
+    @include tablet {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../../images/background/Hero-img-1x-tab.jpg');
+
+        @include retina {
+            background-image: url('../../images/background/Hero-img-2x-tab.jpg');
+        }
+    }
+
+    @include desk {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../../images/background/Hero-img-1x-desk.jpg');
+
+        @include retina {
+            background-image: url('../../images/background/Hero-img-2x-desk.jpg');
+        }
+    }
+
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+    @include desk {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     &__container {
         text-align: center;
     }
-    
+
     &__title {
         margin-left: auto;
         margin-right: auto;
-        width: 696px;
-        font-size: 44px;
+        width: 360px;
         color: var(--background-color);
-        @include font(44px, 900, 1.36, 0.06em);
+        @include font(26px, 900, 1.62, 0.06em);
         text-transform: uppercase;
         margin-bottom: 30px;
+
+        @include desk {
+            @include font(44px, 900, 1.36, 0.06em);
+            width: 696px;
+        }
     }
-    
+
     &__button {
         color: var(--background-color);
         @include font(16px, 700, 1.88, 0.06em);
@@ -33,4 +70,3 @@
         background: #2196F3;
     }
 }
-
