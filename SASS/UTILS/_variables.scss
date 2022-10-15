@@ -1,0 +1,16 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --background-color: #ffffff;
+    --primiry-section-color: #2F303A;
+    --secondary-section-color: #F5F4FA;
+    --primary-font-family:'Roboto', sans-serif;
+    --secondary-font-family:'Raleway', sans-serif;
+}
+@mixin font ($fs, $fw, $lh, $ls){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

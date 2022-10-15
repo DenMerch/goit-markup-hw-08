@@ -1,0 +1,17 @@
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    @include font(26px, 700, 1.19, inherit);
+    font-family: var(--secondary-font-family);
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    &--blue {
+        color: var(--accent-text-color);
+    }
+    
+    &--white {
+        color: var(--background-color);
+    }
+}
