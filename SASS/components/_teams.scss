@@ -1,36 +1,54 @@
 .teams {
     background-color: var(--secondary-section-color);
+
     &__name {
         @include font(16px, 500, 1.19, 0.03em);
-            color: var(--title-text-color);
-            margin-bottom: 10px;
-        }
-    
-        &__jobTitle {
-            line-height: 1.19;
-            font-size: 16px;
-            margin-bottom: 16px;
-    
-        }
-    
-        &__wrap {
-    
-            text-align: center;
-        }
-    
-        &__list {
+        color: var(--title-text-color);
+        margin-bottom: 10px;
+    }
+
+    &__jobTitle {
+        line-height: 1.19;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__wrap {
+
+        text-align: center;
+    }
+
+    &__list {
+        display: block;
+
+
+
+        @include tablet {
             display: flex;
             gap: 30px;
+            width: 738px;
+            flex-wrap: wrap;
         }
-    
-        &__photo {
-            margin-bottom: 30px;
-        }
-    
-        &__item {
-            background-color: var(--background-color);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px
-        }
-}
 
+        @include desk {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__photo {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        background-color: var(--background-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -192,47 +192,67 @@
             </div>
         </section>
         <!-- teams section -->
-        <!-- <section class="section teams">
+        <section class="section teams">
             <div class="container teams__wrap">
                 <h2 class="subject">Наша команда</h2>
                 <ul class="teams__list list">
                     <li class="teams__item">
-                        <img class="teams__photo" src="./images/img1.jpg" width="270" alt=" Igor photo">
+                        <picture>
+                            <source srcset="./images/teams/igor-1x-desk.jpg 1x, ./images/teams/igor-2x-desk.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/teams/igor-1x-tab.jpg 1x, ./images/teams/igor-2x-tab.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/teams/igor-1x-mob.jpg 1x, ./images/teams/igor-2x-mob.jpg 2x"
+                                media="(min-width: 480px)" type="image/jpeg" />
+                            <img class="teams__photo" src="./images/teams/igor-1x-desk.jpg" alt="Igor photo" />
+                        </picture>
                         <h3 class="teams__name">Ігор Дем'яненко</h3>
                         <p class="teams__jobTitle">Product Designer</p>
-                            <ul class="list socials">
-                                <li class="socials__item">
-                                    <a class="link socials__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow"> 
+                        <ul class="list socials">
+                            <li class="socials__item">
+                                <a class="link socials__link" href="https://www.instagram.com/" target="_blank"
+                                    rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
                                     </svg>
-                                    </a>                            
-                                </li>
-                                <li class="socials__item">
-                                    <a class="link socials__link" href="https://twitter.com" target="_blank" rel="noreferrer noopener nofollow"> 
-                                        <svg class="icon socials__icon" width="20" height="20">
-                                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                               </li>
-                                <li class="socials__item">
-                                    <a class="link socials__link" href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener nofollow"> 
-                                        <svg class="icon socials__icon" width="20" height="20">
-                                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                               </li>
-                                <li class="socials__item">
-                                    <a class="link socials__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener nofollow"> 
-                                        <svg class="icon socials__icon" width="20" height="20">
-                                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                               </li>
-                            </ul>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="link socials__link" href="https://twitter.com" target="_blank"
+                                    rel="noreferrer noopener nofollow">
+                                    <svg class="icon socials__icon" width="20" height="20">
+                                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="link socials__link" href="https://uk-ua.facebook.com/" target="_blank"
+                                    rel="noreferrer noopener nofollow">
+                                    <svg class="icon socials__icon" width="20" height="20">
+                                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="link socials__link" href="https://www.linkedin.com" target="_blank"
+                                    rel="noreferrer noopener nofollow">
+                                    <svg class="icon socials__icon" width="20" height="20">
+                                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="teams__item">
-                        <img class="teams__photo" src="./images/img2.jpg" width="270" alt="Olga photo">
+                        <picture>
+                            <source srcset="./images/teams/olga-1x-desk.jpg 1x, ./images/teams/olga-2x-desk.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/teams/olga-1x-tab.jpg 1x, ./images/teams/olga-2x-tab.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/teams/olga-1x-mob.jpg 1x, ./images/teams/olga-2x-mob.jpg 2x"
+                                media="(min-width: 480px)" type="image/jpeg" />
+                            <img class="teams__photo" src="./images/teams/olga-1x-desk.jpg" alt="Igor photo" />
+                        </picture>
                         <h3 class="teams__name">Ольга Рєпіна</h3>
                         <p class="teams__jobTitle">Frontend Developer</p>
                         <ul class="list socials">
@@ -240,14 +260,15 @@
                                 <a class="link socials__link" href="https://www.instagram.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a class="link socials__link" href="https://twitter.com" target="_blank" rel="noreferrer noopener nofollow">
+                                <a class="link socials__link" href="https://twitter.com" target="_blank"
+                                    rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -255,7 +276,7 @@
                                 <a class="link socials__link" href="https://uk-ua.facebook.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -263,14 +284,22 @@
                                 <a class="link socials__link" href="https://www.linkedin.com" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="teams__item">
-                        <img class="teams__photo" src="./images/img3.jpg" width="270" alt="Taras photo">
+                        <picture>
+                            <source srcset="./images/teams/nik-1x-desk.jpg 1x, ./images/teams/nik-2x-desk.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/teams/nik-1x-tab.jpg 1x, ./images/teams/nik-2x-tab.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/teams/nik-1x-mob.jpg 1x, ./images/teams/nik-2x-mob.jpg 2x"
+                                media="(min-width: 480px)" type="image/jpeg" />
+                            <img class="teams__photo" src="./images/teams/nik-1x-desk.jpg" alt="Igor photo" />
+                        </picture>
                         <h3 class="teams__name">Микола Тарасов</h3>
                         <p class="teams__jobTitle">Marketing</p>
                         <ul class="list socials">
@@ -278,14 +307,15 @@
                                 <a class="link socials__link" href="https://www.instagram.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a class="link socials__link" href="https://twitter.com" target="_blank" rel="noreferrer noopener nofollow">
+                                <a class="link socials__link" href="https://twitter.com" target="_blank"
+                                    rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -293,7 +323,7 @@
                                 <a class="link socials__link" href="https://uk-ua.facebook.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -301,14 +331,22 @@
                                 <a class="link socials__link" href="https://www.linkedin.com" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="teams__item">
-                        <img class="teams__photo" src="./images/img4.jpg" width="270" alt="Mikhailo photo">
+                        <picture>
+                            <source srcset="./images/teams/mih-1x-desk.jpg 1x, ./images/teams/mih-2x-desk.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/teams/mih-1x-tab.jpg 1x, ./images/teams/mih-2x-tab.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/teams/mih-1x-mob.jpg 1x, ./images/teams/mih-2x-mob.jpg 2x"
+                                media="(min-width: 480px)" type="image/jpeg" />
+                            <img class="teams__photo" src="./images/teams/mih-1x-desk.jpg" alt="Igor photo" />
+                        </picture>
                         <h3 class="teams__name">Михайло Єрмаков</h3>
                         <p class="teams__jobTitle">UI Designer</p>
                         <ul class="list socials">
@@ -316,14 +354,15 @@
                                 <a class="link socials__link" href="https://www.instagram.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
-                                <a class="link socials__link" href="https://twitter.com" target="_blank" rel="noreferrer noopener nofollow">
+                                <a class="link socials__link" href="https://twitter.com" target="_blank"
+                                    rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -331,7 +370,7 @@
                                 <a class="link socials__link" href="https://uk-ua.facebook.com/" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -339,7 +378,7 @@
                                 <a class="link socials__link" href="https://www.linkedin.com" target="_blank"
                                     rel="noreferrer noopener nofollow">
                                     <svg class="icon socials__icon" width="20" height="20">
-                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                        <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -347,7 +386,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- customers section -->
         <!-- <section class="section customers">
                 <div class="container customers__wrap">
