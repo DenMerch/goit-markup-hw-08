@@ -5,11 +5,25 @@
 .customers__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
+    @include desk {
+        flex-wrap: nowrap;
+    }
 }
 
 .customers__link {
     display: flex;
-    width: 170px;
+    width: 210px;
+
+    @include tablet {
+        width: 226px;
+    }
+
+    @include desk {
+        width: 170px;
+    }
+
     height: 92px;
     justify-content: center;
     align-items: center;
