@@ -1,13 +1,21 @@
 .footer {
     background-color: var(--primiry-section-color);
     padding: 60px 0;
+
     &__wrap {
-        display: flex;
-        align-items: baseline;
+        text-align: center;
     }
-    &__wrap>div:first-child {
-        margin-right: 70px;
+
+    @include desk {
+        &__wrap {
+            display: flex;
+            align-items: baseline;
+        }
+
+
+
     }
+
     &__logo {
         margin-bottom: 20px;
         display: inline-block;
@@ -15,40 +23,72 @@
         padding-bottom: 0;
         margin-right: 0;
     }
+
     &__contact {
         display: inline-block;
         line-height: 1.7;
         color: rgba(255, 255, 255, 0.6);
         letter-spacing: 0.03em;
     }
+
     &__item:nth-child(-n+2) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
+
+    @include desk {
+        &__item:nth-child(-n+2) {
+            margin-bottom: 9px;
+        }
+    }
+
+
+
     &__addres {
         display: inline-block;
         line-height: 1.7;
         color: var(--background-color);
     }
-    &__social {
-        width: 206px;
-        margin-right: auto;
+
+    @include phone-max {
+        &__social {
+            margin: 60px 0;
+        }
     }
+
+
+    @include desk {
+        &__social {
+            width: 206px;
+            margin-right: auto;
+        }
+    }
+
+
     &__title {
         display: block;
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
-    &__mail {
-        min-width: 570px;
+
+    @include desk {
+        &__mail {
+            min-width: 570px;
+            margin-left: auto;
+        }
     }
+
     &__mail>p {
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 20px;
         color: #FFFFFF;
+
+        @include desk {
+            text-align: left;
         }
-    
+    }
+
     &__input {
         height: 50px;
         padding: 15px 16px;
@@ -60,9 +100,15 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        min-width: 358px;
+        min-width: 450px;
+        margin-bottom: 20px;
+
+        @include desk {
+            min-width: 358px;
         }
-    
+
+    }
+
     &__form .btn {
         height: 50px;
         background-color: var(--accent-text-color);
@@ -73,8 +119,16 @@
         position: relative;
         letter-spacing: 0.06em;
         width: 200px;
+
+        @include tablet-max {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
         }
-    
+
+    }
+
     &__button &__send {
         right: 28px;
         top: 13px;
@@ -83,22 +137,11 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@include tablet {
+    .footer__wrap--tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 91px;
+    }
+}
