@@ -189,6 +189,7 @@ img {
   z-index: 999;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   -webkit-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
   display: -webkit-box;
@@ -203,6 +204,7 @@ img {
 .menu-container.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .menu-container .menu-toggle {
@@ -1027,8 +1029,8 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1036,6 +1038,12 @@ img {
           transform: translate(-50%, -50%);
   background: #fff;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-button {
@@ -1060,10 +1068,12 @@ img {
   top: 14px;
 }
 
-.modal b {
+.modal p {
   text-align: center;
   color: var(--title-text-color);
   font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
