@@ -35,7 +35,15 @@
     }
 }
 
+@include phone-max {
+    .portfolio-list:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 .filtered-content {
+
+
     @include tablet {
         display: flex;
         flex-wrap: wrap;
@@ -67,14 +75,20 @@
 
 .portf-wrap {
     padding: 20px 22px;
-
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
 
-.thumb {
+.thumb,
+.overlay,
+.portf-filtered-link {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include tablet {
         width: 354px;
@@ -86,23 +100,15 @@
 
     }
 
+
+}
+
+.thumb {
     height: 294px;
     overflow: hidden;
 }
 
 .overlay {
-    width: 450px;
-
-    @include tablet {
-        width: 354px;
-
-    }
-
-    @include desk {
-        width: 370px;
-
-    }
-
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;

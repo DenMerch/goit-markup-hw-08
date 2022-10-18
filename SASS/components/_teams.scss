@@ -1,6 +1,7 @@
 .teams {
     background-color: var(--secondary-section-color);
 
+
     &__name {
         @include font(16px, 500, 1.19, 0.03em);
         color: var(--title-text-color);

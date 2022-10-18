@@ -415,7 +415,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   height: 400px;
-  max-width: 480px;
+  min-width: 480px;
   background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/Hero-img-1x-mob.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/Hero-img-1x-mob.jpg");
@@ -805,6 +805,7 @@ img {
 }
 
 .footer {
+  min-width: 480px;
   background-color: var(--primiry-section-color);
   padding: 60px 0;
 }
@@ -981,6 +982,11 @@ img {
   color: var(--background-color);
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filtered-content {
     display: -webkit-box;
@@ -1019,29 +1025,42 @@ img {
 
 .portf-wrap {
   padding: 20px 22px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
 }
 
-.thumb {
+.thumb,
+.overlay,
+.portf-filtered-link {
   width: 450px;
-  height: 294px;
-  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  .thumb {
+  .thumb,
+.overlay,
+.portf-filtered-link {
     width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .thumb {
+  .thumb,
+.overlay,
+.portf-filtered-link {
     width: 370px;
   }
 }
 
+.thumb {
+  height: 294px;
+  overflow: hidden;
+}
+
 .overlay {
-  width: 450px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
@@ -1049,16 +1068,6 @@ img {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
-}
-@media screen and (min-width: 768px) {
-  .overlay {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .overlay {
-    width: 370px;
-  }
 }
 .overlay-text {
   line-height: 1.56em;
