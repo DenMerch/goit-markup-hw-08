@@ -30,6 +30,7 @@
 
         @include desk {
             flex-wrap: nowrap;
+            width: auto;
         }
     }
 

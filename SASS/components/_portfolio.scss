@@ -1,33 +1,60 @@
 .portfolio-filter {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    @include tablet {
+        margin-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    @include desk {
+        margin-bottom: 50px;
+    }
 }
 
 .btn-filter {
-    padding: 6px 22px;
+    padding: 6px 25px;
+
+    @include tablet {
+        padding: 6px 22px;
+    }
+
+    font-size: 16px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         background: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-                0px 1px 2px rgba(0, 0, 0, 0.08),
-                0px 2px 2px rgba(0, 0, 0, 0.12);
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
         color: var(--background-color);
     }
 }
 
 .filtered-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 .subject-portf {
     @include font(18px, 700, 2, 0.06em);
+
+    @include tablet {
+        width: 306px;
+    }
+
+    @include tablet {
+        width: 322px;
+    }
+
     color: var(--title-text-color);
     margin-bottom: 4px;
 }
@@ -39,34 +66,61 @@
 }
 
 .portf-wrap {
-    padding: 20px 24px;
+    padding: 20px 22px;
+
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
+
 .thumb {
-    width: 370px;
+    width: 450px;
+
+    @include tablet {
+        width: 354px;
+
+    }
+
+    @include desk {
+        width: 370px;
+
+    }
+
     height: 294px;
     overflow: hidden;
 }
 
 .overlay {
-    width: 370px;
+    width: 450px;
+
+    @include tablet {
+        width: 354px;
+
+    }
+
+    @include desk {
+        width: 370px;
+
+    }
+
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transition: transform 250ms linear;
+
     &-text {
         line-height: 1.56em;
         color: #FFFFFF;
         font-size: 18px;
     }
 }
+
 .portf-filtered-link {
     text-decoration: none;
     font-style: normal;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -74,9 +128,9 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
 
     }
+
     &:hover .overlay,
     &:focus .overlay {
         transform: translateY(-100%);
     }
 }
-
