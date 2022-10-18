@@ -24,6 +24,11 @@
     }
 }
 
+.advanteges__icon {
+    width: 70px;
+    height: 70px;
+}
+
 .advantage__title {
     text-align: center;
     @include font(14px, 700, 1.14, 0.03em);
