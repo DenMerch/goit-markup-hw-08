@@ -1,13 +1,15 @@
 .socials {
-    padding: 0 122px 24px 122px;
+    width: 206px;
+    margin: 0 auto;
+    // padding: 0 122px 24px 122px;
 
-    @include tablet {
-        padding: 0 74px 24px 74px;
-    }
+    // @include tablet {
+    //     padding: 0 74px 24px 74px;
+    // }
 
-    @include desk {
-        padding: 0 32px 30px 32px;
-    }
+    // @include desk {
+    //     padding: 0 32px 30px 32px;
+    // }
 
     display: flex;
     justify-content: space-between;
@@ -35,11 +37,6 @@
     &__link:hover,
     &__link:focus {
         background-color: var(--accent-text-color);
-    }
-
-    &--gap {
-        gap: 10px;
-        margin: 0;
     }
 
     &__link--gray {

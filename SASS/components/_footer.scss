@@ -1,5 +1,5 @@
 .footer {
-    min-width: 480px;
+    min-width: 320px;
     background-color: var(--primiry-section-color);
     padding: 60px 0;
 
@@ -10,10 +10,8 @@
     @include desk {
         &__wrap {
             display: flex;
-            align-items: baseline;
+
         }
-
-
 
     }
 
@@ -50,11 +48,18 @@
         color: var(--background-color);
     }
 
-    @include phone-max {
+
+    &__social {
+        margin: 60px 0;
+    }
+
+    @include tablet {
         &__social {
-            margin: 60px 0;
+            margin: 0;
         }
     }
+
+
 
 
     @include desk {
@@ -72,10 +77,17 @@
         margin-bottom: 20px;
     }
 
+    @include tablet {
+        &__mail {
+            margin-top: 60px;
+        }
+    }
+
     @include desk {
         &__mail {
             min-width: 570px;
             margin-left: auto;
+            margin-top: 0;
         }
     }
 
@@ -101,11 +113,15 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
-        min-width: 450px;
+        width: calc(100% - 6%);
         margin-bottom: 20px;
 
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
         @include desk {
-            min-width: 358px;
+            width: 358px;
         }
 
     }
@@ -141,8 +157,31 @@
 @include tablet {
     .footer__wrap--tablet {
         display: flex;
-        align-items: center;
+
         justify-content: center;
-        gap: 91px;
+        gap: 165px;
+
+    }
+}
+
+@include desk {
+    .footer__wrap--tablet {
+        display: flex;
+
+        gap: 70px;
+    }
+
+    .footer__adress {
+        text-align: left;
+    }
+}
+
+.footer__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include desk {
+        display: block;
     }
 }

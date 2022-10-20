@@ -75,7 +75,7 @@
 
 .portf-wrap {
     padding: 20px 22px;
-    max-width: 450px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #EEEEEE;
@@ -86,7 +86,7 @@
 .thumb,
 .overlay,
 .portf-filtered-link {
-    width: 450px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 
@@ -113,6 +113,7 @@
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transition: transform 250ms linear;
+    display: none;
 
     &-text {
         line-height: 1.56em;
@@ -137,6 +138,7 @@
 
     &:hover .overlay,
     &:focus .overlay {
+        display: block;
         transform: translateY(-100%);
     }
 }
