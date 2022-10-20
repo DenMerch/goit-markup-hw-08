@@ -138,7 +138,13 @@
 
     &:hover .overlay,
     &:focus .overlay {
-        display: block;
+
         transform: translateY(-100%);
+    }
+}
+
+@include desk {
+    .overlay {
+        display: block;
     }
 }
