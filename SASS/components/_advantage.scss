@@ -19,8 +19,11 @@
 }
 
 .advantege__item {
+    margin-bottom: 30px;
+
     @include tablet {
         width: 354px;
+        margin-bottom: 0;
     }
 }
 
@@ -45,11 +48,14 @@
 }
 
 .advantage__list {
+
+
     @include tablet {
         display: flex;
         gap: 30px;
         width: 738px;
         flex-wrap: wrap;
+
     }
 
     @include desk {

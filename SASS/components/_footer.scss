@@ -10,7 +10,7 @@
     @include desk {
         &__wrap {
             display: flex;
-
+            align-items: baseline;
         }
 
     }
@@ -66,6 +66,7 @@
         &__social {
             width: 206px;
             margin-right: auto;
+            text-align: left;
         }
     }
 
@@ -167,7 +168,7 @@
 @include desk {
     .footer__wrap--tablet {
         display: flex;
-
+        align-items: baseline;
         gap: 70px;
     }
 
