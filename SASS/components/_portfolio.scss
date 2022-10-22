@@ -75,7 +75,7 @@
 
 .portf-wrap {
     padding: 20px 22px;
-    max-width: 320px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #EEEEEE;
@@ -86,7 +86,12 @@
 .thumb,
 .overlay,
 .portf-filtered-link {
-    max-width: 450px;
+    width: auto;
+
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+
     margin-left: auto;
     margin-right: auto;
 
@@ -106,6 +111,8 @@
 .thumb {
     height: 294px;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .overlay {
@@ -114,6 +121,11 @@
     padding: 63px 24px;
     transition: transform 250ms linear;
     display: none;
+
+    @media screen and (min-width:480px) {
+        display: block;
+
+    }
 
     &-text {
         line-height: 1.56em;
@@ -147,4 +159,8 @@
     .overlay {
         display: block;
     }
+}
+
+.photo-protf {
+    width: 100%;
 }

@@ -1084,7 +1084,7 @@ img {
 
 .portf-wrap {
   padding: 20px 22px;
-  max-width: 320px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #EEEEEE;
@@ -1095,9 +1095,16 @@ img {
 .thumb,
 .overlay,
 .portf-filtered-link {
-  max-width: 450px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .thumb,
+.overlay,
+.portf-filtered-link {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .thumb,
@@ -1117,6 +1124,8 @@ img {
 .thumb {
   height: 294px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay {
@@ -1128,6 +1137,11 @@ img {
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
   display: none;
+}
+@media screen and (min-width: 480px) {
+  .overlay {
+    display: block;
+  }
 }
 .overlay-text {
   line-height: 1.56em;
@@ -1158,6 +1172,10 @@ img {
     display: block;
   }
 }
+.photo-protf {
+  width: 100%;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
