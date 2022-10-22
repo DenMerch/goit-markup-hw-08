@@ -161,6 +161,7 @@
 
         justify-content: center;
         gap: 165px;
+        align-items: baseline;
 
     }
 }
@@ -168,7 +169,6 @@
 @include desk {
     .footer__wrap--tablet {
         display: flex;
-        align-items: baseline;
         gap: 70px;
     }
 

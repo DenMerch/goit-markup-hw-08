@@ -1,9 +1,15 @@
 .advantage__wrap {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+
+
+
+
 
     @include tablet {
         width: 354px;
@@ -19,7 +25,13 @@
 }
 
 .advantege__item {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
+    width: 100%;
+
+
+
 
     @include tablet {
         width: 354px;
