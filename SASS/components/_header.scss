@@ -34,10 +34,10 @@
     height: 100%;
     padding: 48px 0 40px 48px;
     background-color: #fff;
-    z-index: 999;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
 
     transition: opacity 250ms ease-in-out;
     display: flex;
